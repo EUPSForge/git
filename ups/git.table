@@ -1,0 +1,5 @@
+envUnset(PRODUCT_DIR)
+envPrepend(PATH, ${PRODUCT_DIR}/bin)
+envPrepend(MANPATH, ${PRODUCT_DIR}/share/man:)
+envPrepend(PERL5LIB, ${PRODUCT_DIR}/lib)
+envPrepend(PERL5LIB, ${PRODUCT_DIR}/lib64)
