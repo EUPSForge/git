@@ -1,5 +1,9 @@
 # EupsPkg config file. Sourced by 'eupspkg'
 
+# Make sure the curl libraries that corresponds to curl binary
+# are picked up. This is needed both by build() and install()
+export CURLDIR=$(curl-config --prefix)
+
 build()
 {
 	export NO_FINK=1
